@@ -1,0 +1,13 @@
+
+    {
+        "total_std":"4000",
+        "new_std":"1,955",
+        "graduated":"15,670",
+        "total_faculty":"500",
+        "Ug_std_by_course":["55","49","59","65"],
+        "Announcements":["Technical Incubation Centre:This is a great opportunity for final year students, fresh graduates, and even experienced individuals to turn their business idea into reality.Interested startups and their founders are encouraged to apply using the following link: https://tinyurl.com/startupapplicationPunjab","The Eighteenth International Conference on Intelligent Computing will be organised on August 7-11, 2022, in Xi’An, China.","Funding opportunities in the broad range of sustainable development is mentioned below. In addition to this, list of all currently open funding opportunities of previous editions are also listed. For detail please click here."],
+        "vision":"Establish the department as a centre of excellence in domain of software engineering, focusing on learning environment, quality teaching, research and entrepreneurship to contribute in building a better society.",
+        "students_male_female":["2995","1045"],
+        "faculty_male_female":["300","200"]
+
+    }

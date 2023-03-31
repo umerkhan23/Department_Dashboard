@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Faculty Profile</title>
+        <!-- Bootstrap Styles-->
+        <link href="css/bootstrap.css" rel="stylesheet" />
+        <!-- FontAwesome Styles-->
+        <link href="css/font-awesome.css" rel="stylesheet" />
+        <!-- Custom Styles-->
+        <link href="css/custom-styles.css" rel="stylesheet" />
+        <!-- Google Fonts-->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans'
+            rel='stylesheet' type='text/css' />
+        <script src="jquery-3.5.1.min.js"></script>
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/faculty.js"></script>
+        <script src="js/date.js"></script>
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <nav class="navbar navbar-default top-navbar" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle"
+                        data-toggle="collapse" data-target=".sidebar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/index">
+                        <img src="img/mcs_logo.png" alt="mcs" id="mcspic">
+                    </a>
+
+                </div>
+
+                <ul class="nav navbar-top-links navbar-right">
+                    <li id="date"></li>
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown"
+                            href="#" aria-expanded="false">
+                            <i class="fa fa-user fa-fw"></i> <i class="fa
+                                fa-caret-down"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li><a href="/student"><i class="fa fa-user fa-fw"></i>
+                                    User Profile</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="/"><i class="fa fa-sign-out fa-fw"></i>
+                                    Logout</a>
+                            </li>
+                        </ul>
+                        <!-- /.dropdown-user -->
+                    </li>
+                    <!-- /.dropdown -->
+                </ul>
+            </nav>
+            <!--/. NAV TOP  -->
+            <nav class="navbar-default navbar-side" role="navigation">
+                <div class="sidebar-collapse">
+                    <ul class="nav" id="main-menu">
+
+                        <li>
+                            <a href="/index"><i class="fa fa-dashboard"></i>
+                                Dashboard</a>
+                        </li>
+
+                        <li>
+                            <a href="/student"><i class="fa fa-fw fa-file"></i>
+                                Student</a>
+                        </li>
+
+                        <li>
+                            <a class="active-menu" href="/faculty"><i class="fa
+                                    fa-fw fa-file"></i> Faculty Profiles</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </nav>
+            <!-- /. NAV SIDE  -->
+            <div id="page-wrapper">
+                <div class="header">
+
+                    <h1 class="page-header">
+                        Alia Razia Malik<small>Assistant Professor</small>
+                    </h1>
+                    <ol class="breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="/faculty">Faculty</a></li>
+                        <li class="active">Alia Razia Malik</li>
+                    </ol>
+
+                </div>
+                <div id="page-inner">
+
+                    <div class="media">
+                        <div class="media-left">
+
+                            <img src="img/mamalia.png" class="media-object"
+                                style=" height: 155px;">
+                        </div>
+
+                        <div class="media-body">
+                            <h3 class="media-heading"><b>Alia Razia Malik</b></h3>
+                            <p>
+                                MPhil (Linguistics) -Fatima Jinnah Women University 
+                            </div> <p>
+
+                            </p>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <div class="panel-group"
+                                                id="accordion">
+                                                <div class="panel
+                                                    panel-default">
+
+                                                    <div class="panel-heading">
+                                                        <h4 class="panel-title">
+                                                            <a
+                                                                data-toggle="collapse"
+                                                                data-parent="#accordion"
+                                                                href="#collapseOne"
+                                                                class="collapsed
+                                                                research">Research
+                                                            </a>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="collapseOne"
+                                                        class="panel-collapse
+                                                        collapse" style="height:
+                                                        0px;">
+                                                        <div class="panel-body
+                                                            rs">
+                                                            DATA WILL BE ADDED
+                                                            HERE
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="panel
+                                                    panel-default">
+                                                    <div class="panel-heading">
+                                                        <h4 class="panel-title">
+                                                            <a
+                                                                data-toggle="collapse"
+                                                                data-parent="#accordion"
+                                                                class="publications"
+                                                                href="#collapseTwo">Publications</a>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="collapseTwo"
+                                                        class="panel-collapse
+                                                        in" style="height:
+                                                        auto;">
+                                                        <div class="panel-body
+                                                            pb">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="panel
+                                                    panel-default">
+                                                    <div class="panel-heading">
+                                                        <h4 class="panel-title">
+                                                            <a
+                                                                data-toggle="collapse"
+                                                                data-parent="#accordion"
+                                                                href="#collapseThree"
+                                                                class="collapsed
+                                                                awards">Awards
+                                                                and Honors</a>
+                                                        </h4>
+                                                    </div>
+                                                    <div id="collapseThree"
+                                                        class="panel-collapse
+                                                        collapse">
+                                                        <div class="panel-body
+                                                            aw">
+                                                            DATA WILL BE ADDED
+                                                            HERE
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /. ROW  -->
+
+                            <footer>
+                                <p>© 2023 National Univsersity of Sciences and
+                                    Technology. All Rights Reserved.</p>
+                            </footer>
+                        </div>
+                        <!-- /. PAGE INNER  -->
+                    </div>
+                    <!-- /. PAGE WRAPPER  -->
+                </div>
+                <!-- /. WRAPPER  -->
+                <!-- JS Scripts-->
+                <!-- jQuery Js -->
+                <script src="js/jquery-1.10.2.js"></script>
+                <!-- Bootstrap Js -->
+                <script src="js/bootstrap.min.js"></script>
+                <!-- Metis Menu Js -->
+                <script src="js/jquery.metisMenu.js"></script>
+                <!-- Custom Js -->
+                <script src="js/custom-scripts.js"></script>
+
+            </body>
+
+        </html>

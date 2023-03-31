@@ -1,0 +1,284 @@
+﻿<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Dashboard</title>
+    <!-- Bootstrap Styles-->
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <!-- FontAwesome Styles-->
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <!-- Custom Styles-->
+    <link href="css/custom-styles.css" rel="stylesheet" />
+    <!-- Google Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="assets/js/Lightweight-Chart/cssCharts.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/date.js"></script>
+</head>
+
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar navbar-default top-navbar" role="navigation">
+
+            <div class="navbar-header">
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+
+                </button>
+
+                <a class="navbar-brand" href="/index">
+                    <img src="img/mcs_logo.png" alt="mcs" id="mcspic">
+                </a>
+
+              
+            </div>
+            <!-- start -->
+            <ul class="nav navbar-top-links navbar-right">
+
+                <li id="date"></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="/student"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="/"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+        </nav>
+        <!--/. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+
+                    <li>
+                        <a class="active-menu" href="/index"><i class="fa fa-dashboard"></i> Dashboard</a>
+                    </li>
+
+                    <li>
+                        <a href="/student"><i class="fa fa-fw fa-file"></i> Student</a>
+                    </li>
+
+                    <li>
+                        <a href="/faculty"><i class="fa fa-fw fa-file"></i> Faculty Profiles</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </nav>
+        <!-- /. NAV SIDE  -->
+
+        <div id="page-wrapper">
+            <div class="header">
+                <h1 class="page-header">
+                    Dashboard
+                </h1>
+                <ol class="breadcrumb">
+                    <li><a href="#">Home</a></li>
+                    <li class="active"><a href="#">Dashboard</a></li>
+                </ol>
+
+            </div>
+            <div id="page-inner">
+                <!-- /. ROW  -->
+                <!-- ----------------------------------------------------- -->
+                <div class="row">
+                    <img src="img/pic1.jpg" alt="mcs" style="margin: 0px 15px; width:97%">
+                </div>
+                <br>
+                <!-- ----------------------------------------------------- -->
+                <div class="row">
+                    <div class="col-md-3 col-sm-12 col-xs-12">
+                        <div class="board">
+                            <div class="panel panel-primary">
+                                <div class="number">
+                                    <h3>
+                                        <h3 class="totalst"></h3> <!-- total students here-->
+
+                                        <small>Total Students</small>
+                                    </h3>
+                                </div>
+                                <div class="icon">
+                                    <i class="fa fa-users fa-5x red"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-12 col-xs-12">
+                        <div class="board">
+                            <div class="panel panel-primary">
+                                <div class="number">
+                                    <h3>
+                                        <h3 class="newst"> </h3> <!-- new students here-->
+                                        <small>new students</small>
+                                    </h3>
+                                </div>
+                                <div class="icon">
+                                    <i class="fa fa-user-plus fa-5x blue"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-12 col-xs-12">
+                        <div class="board">
+                            <div class="panel panel-primary">
+                                <div class="number">
+                                    <h3>
+                                        <h3 class="graduatedst"> </h3> <!-- graduated students here-->
+                                        <small>GRADUATED</small>
+                                    </h3>
+                                </div>
+                                <div class="icon">
+                                    <i class="fa fa-graduation-cap fa-5x green"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-12 col-xs-12">
+                        <div class="board">
+                            <div class="panel panel-primary">
+                                <div class="number">
+                                    <h3>
+                                        <h3 class="totalfac"></h3> <!-- total faculty here-->
+                                        <small>total faculty</small>
+                                    </h3>
+                                </div>
+                                <div class="icon">
+                                    <i class="fa fa-user fa-5x yellow"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------------------------------------------------------- -->
+                <div class="row">
+
+                    <div class="col-md-7">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                UG Student By Course
+                            </div>
+                            <div class="panel-body">
+                                <canvas id="bar-chart" style="width:100%;max-width:600px"></canvas>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                ANNOUNCEMENT'S
+                            </div>
+                            <div class="panel-body announcements">
+                                <marquee behavior="scroll" direction="down" scrollamount="3" onmouseover="this.stop()"
+                                    onmouseout="this.start()">
+                                    <p class="p0"></p>
+                                    <p class="p1"></p>
+                                    <p class="p2"></p>
+                                </marquee>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+
+                <!------------------------------------------------------- -->
+
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Student's
+                            </div>
+                            <div class="panel-body">
+                                <canvas id="myChart1" style="width:100%;;">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Faculty
+                            </div>
+                            <div class="panel-body">
+                                <canvas id="myChart2" style="width:100%;">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Vission and Mission
+                            </div>
+                            <div class="panel-body">
+                                <p class="vision"></p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                   <!-- /. ROW  -->
+				<footer><p>© 2023 National Univsersity of Sciences and Technology. All Rights Reserved.</p></footer>
+            </div>
+            <!-- /. PAGE INNER  -->
+        </div>
+        <!-- /. PAGE WRAPPER  -->
+    </div>
+    <!-- /. WRAPPER  -->
+    <!-- JS Scripts-->
+    <!-- jQuery Js -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <!-- Bootstrap Js -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Js -->
+    <script src="js/jquery.metisMenu.js"></script>
+
+
+    <script src="js/easypiechart.js"></script>
+    <script src="js/easypiechart-data.js"></script>
+
+
+
+    <!-- Custom Js -->
+    <script src="js/custom-scripts.js"></script>
+
+
+
+
+
+</body>
+
+</html>

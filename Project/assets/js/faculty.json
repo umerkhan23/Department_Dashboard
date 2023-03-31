@@ -1,0 +1,58 @@
+[
+        {
+           "name":"Associate Professor Adnan Ahmed Khan",
+           "research":"Signal Processing Techniques in Advanced Wireless Systems",
+           "publications":["A wideband decoupling method using bezel-coupled loop-type isolator for smartwatch MIMO applications","Secure resource management in beyond 5G heterogeneous networks with decoupled access"],
+           "awards_and_honours":"None"
+        },
+      
+        {
+            "name":"Dr. Naima Altaf",
+            "research":"Dr Naima Iltaf core area of research is recommender systems, image processing and distributed systems.",
+            "publications":["S-RAP: relevance-aware QoS prediction in web-services and user contexts","A framework to predict early news popularity using deep temporal propagation patterns"],
+            "awards_and_honours":"Gold Medal"
+         },
+         {
+            "name":"Mobeena Shahzad",
+            "research":"With in CSE Department",
+            "publications":["",""],
+            "awards_and_honours":"Two President's Gold Medals"
+         },
+         {
+            "name":"Ihtesham Ul Islam",
+            "research":"none",
+            "publications":[" Multi-feature-based crowd video modeling for visual event detection"," Fast Codebook Generation Using Pattern Based Masking Algorithm for Image Compression"],
+            "awards_and_honours":"none"
+         },
+         {
+            "name":"Dr. Yawar Bangash Abbasi",
+            "research":"SOFTWARE DEFINED NETWORKING",
+            "publications":["PCSS: Privacy Preserving Communication Scheme for SDN Enabled Smart Homes","ARP Overhead Reduction Framework for Software Defned Data Centers"],
+            "awards_and_honours":"Guest speaker at Huazhong"
+         },
+         {
+            "name":"Alia Razia Malik",
+            "research":"none",
+            "publications":["Hybrid double-diffusivity convection and induced magnetic field effects on peristaltic waves of Oldroyd 4-constant nanofluids in non-uniform channel"," Theoretical investigation of double diffusion convection of six constant Jeffreys nanofluid on waves of peristaltic with induced magnetic field: a bio-nano-engineering model"],
+            "awards_and_honours":"none"
+         },
+         {
+            "name":"Dr Kabeer Ahmed",
+            "research":"PhD (Wireless Multimedia Sensor Networks)",
+            "publications":["Progressive Fuzzy PSO-PID Congestion Control Algorithm for WSNs","Compact and User-Friendly Representation of IPv6 Addressing Approach and Masking"],
+            "awards_and_honours":"brass medal"
+         },
+         {
+            "name":"Laraib Zainab",
+            "research":"none",
+            "publications":["",""],
+            "awards_and_honours":"none"
+         },
+         {
+            "name":"Muntaha Noor",
+            "research":"none",
+            "publications":["",""],
+            "awards_and_honours":"none"
+         }
+
+ ]

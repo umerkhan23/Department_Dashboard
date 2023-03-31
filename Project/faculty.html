@@ -1,0 +1,314 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       
+        <title>Faculty Profile</title>
+        <!-- Bootstrap Styles-->
+        <link href="css/bootstrap.css" rel="stylesheet" />
+        <!-- FontAwesome Styles-->
+        <link href="css/font-awesome.css" rel="stylesheet" />
+        <!-- Custom Styles-->
+        <link href="css/custom-styles.css" rel="stylesheet" />
+        <!-- Google Fonts-->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+        <script src="jquery-3.5.1.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/date.js"></script>
+       
+    </head>
+<body>
+    <div id="wrapper">
+        <nav class="navbar navbar-default top-navbar" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/index"> 
+                    <img src="img/mcs_logo.png" alt="mcs" id="mcspic">
+                </a>
+			
+            </div>
+
+            <ul class="nav navbar-top-links navbar-right">
+                <li id="date"></li>
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="/student"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="/"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+        </nav>
+        <!--/. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+
+                    <li>
+                        <a  href="/index"><i class="fa fa-dashboard"></i> Dashboard</a>
+                    </li>
+
+                    <li>
+                        <a href="/student"><i class="fa fa-fw fa-file"></i> Student</a>
+                    </li>
+
+                    <li>
+                        <a class="active-menu" href="/faculty"><i class="fa fa-fw fa-file"></i> Faculty Profiles</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </nav>
+
+        <!-- /. NAV SIDE END -->
+        <!-- THE BAR WITH HOME/FACULTY Info -->
+        <div id="page-wrapper" >
+			  <div class="header"> 
+                        <h1 class="page-header">
+                            Faculty Profiles
+                        </h1>
+						<ol class="breadcrumb">
+					  <li><a href="/index">Home</a></li>
+					  <li class="active"><a href="/faculty">Faculty Profiles</a></li>
+					 
+					</ol> 
+									
+		</div>
+		
+            <div id="page-inner"> 
+                                 
+            
+            <div class="row">
+         
+                <div class="col-md-4 col-sm-4">
+ 
+                        <div class="panel1" onclick="location.href='/1'">
+                        <img src="img/HOD.jpg" class="img-responsive center-block" id="fpic">
+
+                        <div class="panel-body">
+                            <div class="faculty-name">Adnan Ahmed Khan</div>
+                            <div class="desc">Head Of Department</div>
+                         
+                            <p></p>
+                            <div id="email">
+                            <a href = "adnankhan@mcs.edu.pk" id="mail"><i class="fa fa-envelope"></i>   adnankhan@mcs.edu.pk</a>
+</div>
+<p> </p>
+<p>  </p>
+                        </div>
+                      
+                    </div>
+                </div>
+        
+                <div class="col-md-4 col-sm-4">
+                    <div class="panel1" onclick="location.href='/2'">
+                    <img src="img/mamNaima.jpg" class="img-responsive center-block" id="fpic">
+                    <!-- <img src= > -->
+                        <div class="panel-body">
+                            <div class="faculty-name">Naima Altaf</div>
+                            <div class="desc">Assosiate Professor</div>
+                         
+                            <p></p>
+                            <div id="email">
+                            <a href =  naima@mcs.edu.pk id="mail"><i class="fa fa-envelope"></i>  naima@mcs.edu.pk</a> 
+                            <p> </p>
+                            <p>  </p>
+</div>
+
+                        </div>
+                    
+                    </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-4">
+                    <div class="panel1" onclick="location.href='/3'">
+                    <img src="img/mammobeena.jpg" class="img-responsive center-block" id="fpic">
+                    <!-- <img src= > -->
+                        <div class="panel-body">
+                            <div class="faculty-name">Mobeena Shahzad</div>
+                            <div class="desc">Assistant Professor</div>
+                         
+                            <p></p>
+                            <div id="email">
+                            <a href = "mobeena@mcs.edu.pk" id="mail"><i class="fa fa-envelope"></i>mubeena@mcs.edu.pk</a> 
+                            <p> </p>
+                            <p>  </p>
+</div>
+
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                
+                <div class="col-md-4 col-sm-4">
+                    <div class="panel1" onclick="location.href='/4'">
+                    <img src="img/SirIhtesham.png" class="img-responsive center-block" id="fpic">
+                    <!-- <img src= > -->
+                        <div class="panel-body">
+                            <div class="faculty-name">Ihtesham Ul Islam</div>
+                            <div class="desc">Associate Professor</div>
+                         
+                            <p></p>
+                            <div id="email">
+                            <a href = "ihtesham@mcs.edu.pk" id="mail"><i class="fa fa-envelope"></i> ihtesham@mcs.edu.pk</a> 
+                            <p> </p>
+                            <p>  </p>
+</div>
+
+                        </div>
+                    
+                    </div>
+                </div>
+
+                
+                <div class="col-md-4 col-sm-4">
+                    <div class="panel1" onclick="location.href='/5'">
+                    <img src="img/siryawar.jpg" class="img-responsive center-block" id="fpic">
+                    <!-- <img src= > -->
+                        <div class="panel-body">
+                            <div class="faculty-name">Yawar Bangash Abbasi</div>
+                            <div class="desc">Assistant Professor</div>
+                         
+                            <p></p>
+                            <div id="email">
+                            <a href =  yawar@mcs.edu.pk id="mail"><i class="fa fa-envelope"></i>  yawar@mcs.edu.pk</a> 
+                            <p> </p>
+                            <p>  </p>
+</div>
+
+                        </div>
+                    
+                    </div>
+                </div>
+
+                
+                <div class="col-md-4 col-sm-4">
+                    <div class="panel1" onclick="location.href='/6'">
+                    <img src="img/mamalia.png" class="img-responsive center-block" id="fpic">
+                    <!-- <img src= > -->
+                        <div class="panel-body">
+                            <div class="faculty-name">Alia Razia Malik</div>
+                            <div class="desc">Assistant Professor</div>
+                         
+                            <p></p>
+                            <div id="email">
+                            <a href = "aliaraziamalik@mcs.edu.pk" id="mail"><i class="fa fa-envelope"></i>  aliaraziamalik@mcs.edu.pk </a> 
+                            <p> </p>
+                            <p>  </p>
+</div>
+
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                
+                <div class="col-md-4 col-sm-4">
+                    <div class="panel1" onclick="location.href='/7'">
+                        <img src="img/sirkabir.jpg" class="img-responsive center-block" id="fpic">
+
+                        <div class="panel-body">
+                            <div class="faculty-name">Kabeer Ahmed</div>
+                            <div class="desc">Demonstrater</div>
+                         
+                            <p></p>
+                            <div id="email">
+                            <a href = " kabeer@mcs.edu.pk" id="mail"><i class="fa fa-envelope"></i>    kabeer@mcs.edu.pk</a>
+</div>
+<p> </p>
+<p>  </p>
+                        </div>
+                      
+                    </div>
+                </div>
+            
+                <div class="col-md-4 col-sm-4">
+                    <div class="panel1" onclick="location.href='/8'">
+                    <img src="img/mamlaraib.png" class="img-responsive center-block" id="fpic">
+                    <!-- <img src= > -->
+                        <div class="panel-body">
+                            <div class="faculty-name">Laraib Zainab</div>
+                            <div class="desc">Lab Engineer</div>
+                         
+                            <p></p>
+                            <div id="email">
+                            <a href = "laraibzainab@mcs.nust.edu.pk" id="mail"><i class="fa fa-envelope"></i>  laraibzainab@mcs.nust.edu.pk </a> 
+                            <p> </p>
+                            <p>  </p>
+</div>
+
+                        </div>
+                    
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="panel1" onclick="location.href='/9'">
+                    <img src="img//mamMuntaha.png" class="img-responsive center-block" id="fpic">
+                    <!-- <img src= > -->
+                        <div class="panel-body">
+                            <div class="faculty-name">Muntaha Noor</div>
+                            <div class="desc">Lab Engineer</div>
+                         
+                            <p></p>
+                            <div id="email">
+                            <a href = "noor_muntaha@yahoo.com" id="mail"><i class="fa fa-envelope"></i> noor_muntaha@yahoo.com</a> 
+                            <p> </p>
+                            <p>  </p>
+</div>
+
+                        </div>
+                    
+                    </div>
+                </div>
+                
+            </div>
+
+
+        
+                    <!-- /. ROW  -->
+				<footer><p>© 2023 National Univsersity of Sciences and Technology. All Rights Reserved.</p></footer>
+					</div>
+			 <!-- /. PAGE INNER  -->
+            </div>
+         <!-- /. PAGE WRAPPER  -->
+        </div>
+     <!-- /. WRAPPER  -->
+    <!-- JS Scripts-->
+    <!-- jQuery Js -->
+    <!-- jQuery Js -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <!-- Bootstrap Js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Metis Menu Js -->
+    <script src="js/jquery.metisMenu.js"></script>
+    <!-- Custom Js -->
+    <script src="js/custom-scripts.js"></script>
+
+
+
+    
+   
+</body>
+</html>
